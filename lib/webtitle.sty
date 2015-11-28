@@ -1,0 +1,44 @@
+%------------------------------------------------------------------------------------
+% CouseTeX Simplified Latex Lightweight Open Course Web-framework
+% [shane.transue@ucdenver.edu]
+%------------------------------------------------------------------------------------
+
+\HCode {
+	<div class="topbar">&nbsp;</div>
+	<div id="colortab" class="bluetabs">
+			<ul>
+				<li><a href="index.html" title="Home"><span>Home</span></a></li>
+				<li><a href="index.html" title="Syllabus"><span>Syllabus</span></a></li>
+				<li><a href="#" title="Lectures" rel="lectures_menu"><span>Lectures</span></a></li>
+				<li><a href="#" title="Modules" rel="modules_menu"><span>Modules</span></a></li>
+				<li><a href="#" title="Homework" rel="homework_menu"><span>Homework</span></a></li>	
+				<li><a href="#" title="Resources"><span>Resources</span></a></li>	
+			</ul>
+		</div>
+		<div class="ddcolortabsline">&nbsp;</div>
+		<!-- Modules Menu -->                                                   
+		<div id="modules_menu" class="dropmenudiv_a">
+			<a href="#">Module 1</a>
+			<a href="#">Module 2</a>
+			<a href="#">Module 3</a>
+			<a href="#">Module 4</a>
+			<a href="#">Module N</a>
+		</div>
+		<!-- Homework Menu -->                                                
+		<div id="homework_menu" class="dropmenudiv_a" style="width: 180px;">
+			<a href="#">Homework 1</a>
+			<a href="#">Homework 2</a>
+			<a href="#">Homework 3</a>
+			<a href="#">Homework N</a>
+		</div>
+		<!-- Lectures Menu -->                                                
+		<div id="lectures_menu" class="dropmenudiv_a" style="width: 180px;">
+			<a href="#">Introduction</a>
+			<a href="#">Lecture 1</a>
+			<a href="#">Lecture 2</a>
+			<a href="#">Lecture N</a>
+		</div>
+		<script type="text/javascript">
+		tabdropdown.init("colortab", "auto")
+		</script>
+}

@@ -1,0 +1,48 @@
+%------------------------------------------------------------------------------------
+% CouseTeX Simplified Latex Lightweight Open Course Web-framework
+% [shane.transue@ucdenver.edu]
+%------------------------------------------------------------------------------------
+\documentclass[10pt]{article}
+\input{courseinput.sty}
+
+\begin{document}
+\input{coursedoc.sty}
+
+This is a module that may include information about OpenGL as an example.
+
+\begin{section}{Graphical Processing Unit (GPU) Architecture}
+This is some content that contains some math $\textstyle \vec{v} = \vec{a}\;\times\;\vec{b}$. Here is a bunch more text so that way it will fill in the remaining section of this page so hopefully there will be a second line eventually. This could be done using the lipsum package but I am lazy and this will have to do for now.
+
+\begin{equation}
+	\int_0^1 x^2 dx
+\end{equation}
+
+\lstinputlisting[caption=Scheduler Test]{code/test.c}
+
+\begin{subsection}{Hello There Subsection}
+	Hello subsection content. Here is some more content.
+	
+	\begin{equation}
+		\int_0^1 x dx
+	\end{equation}
+\end{subsection}
+
+\end{section}
+
+\begin{section}{Some Random Section}
+	Hello there some additional content of this section.
+	
+	\begin{subsection}{Subsection of Section 2}
+		Here is some more content. Technically this could be done using lipsum.
+	\end{subsection}
+	
+	\begin{subsection}{Another Subsection of Section 2}
+		Here is some more content. Technically this could be done using lipsum, again.
+	\end{subsection}
+\end{section}
+
+\begin{section}{Additional Section}
+	Hello there some additional content of this section.
+\end{section}
+	
+\end{document}

@@ -1,0 +1,27 @@
+%------------------------------------------------------------------------------------
+% CouseTeX Simplified Latex Lightweight Open Course Web-framework
+% [shane.transue@ucdenver.edu]
+%------------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------------
+% This complex set of macros redefines a div hierarchy within the generated
+% html so that section headers and section content can have two different
+% CSS styles.
+%------------------------------------------------------------------------------------
+\let\oldsection\section
+\newenvironment{testSection}
+{\HCode{<div class="section">} \oldsection}
+{\HCode{</div>}}
+
+\renewenvironment{section}[1]
+{\testSection{#1} \HCode{<div class="sectionContent">}}
+{\HCode{</div></div>}}
+
+\let\oldsubsection\subsection
+\newenvironment{testSubSection}
+{\HCode{<div class="section">} \oldsubsection}
+{\HCode{</div>}}
+
+\renewenvironment{subsection}[1]
+{\testSubSection{#1} \HCode{<div class="sectionContent">}}
+{\HCode{</div></div>}}
