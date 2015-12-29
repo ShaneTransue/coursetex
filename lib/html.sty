@@ -25,3 +25,12 @@
 \renewenvironment{subsection}[1]
 {\testSubSection{#1} \HCode{<div class="sectionContent">}}
 {\HCode{</div></div>}}
+
+\let\oldsubsubsection\subsubsection
+\newenvironment{testSubSubSection}
+{\HCode{<div class="section">} \oldsubsubsection}
+{\HCode{</div>}}
+
+\renewenvironment{subsubsection}[1]
+{\testSubSubSection{#1} \HCode{<div class="sectionContent">}}
+{\HCode{</div></div>}}

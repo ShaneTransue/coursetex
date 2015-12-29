@@ -1,0 +1,135 @@
+.bluetabs{
+	border-bottom: 1px solid #D9D9D9;
+	background-color: fcfcfc;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+	width: 800px;
+}
+
+.bluetabs ul{
+	padding: 3px 0;
+	margin-left: 0;
+	margin-top: 1px;
+	margin-bottom: -1px;
+	font-family: Arial, sans-serif;
+	font-variant: small-caps;
+	font-size: 13pt;
+	list-style-type: none;
+	text-align: center;
+}
+
+.bluetabs li{
+	display: inline;
+	margin: 0;
+}
+
+.bluetabs li a{
+	text-decoration: none;
+	padding: 3px 7px;
+	margin-right: 3px;
+	/*border: 1px solid #D9D9D9;*/
+	border: 0px solid #fff;
+	border-bottom: 0px;
+	color: #777;
+	background: white url(media/bluetab.gif) top left repeat-x; /*THEME CHANGE HERE*/
+}
+
+.bluetabs li a:visited{
+	color: #777;
+}
+
+.bluetabs li a:hover{
+	text-decoration: none;
+	color: #000;
+}
+
+.bluetabs li.selected{
+}
+
+.bluetabs li.selected a{ /*selected main tab style */
+	background-image: url(media/bluetabactive.gif); /*THEME CHANGE HERE*/
+	border-bottom-color: white;
+}
+
+.bluetabs li.selected a:hover{ /*selected main tab style */
+	text-decoration: none;
+}
+
+/* ######### Style for Drop Down Menu ######### */
+
+.dropmenudiv_b{
+	position:absolute;
+	top: 0;
+	border: 1px solid #B1B1B1; /*THEME CHANGE HERE*/
+	border-width: 0 1px;
+	font:normal 13px Verdana;
+	line-height:18px;
+	z-index:100;
+	background-color: white;
+	width: 200px;
+	visibility: hidden;
+}
+
+
+.dropmenudiv_b a{
+	width: auto;
+	display: block;
+	text-indent: 5px;
+	border: 0 solid #D1D1D1; /*THEME CHANGE HERE*/
+	border-bottom-width: 1px;
+	padding: 2px 0;
+	text-decoration: none;
+	color: black;
+}
+
+* html .dropmenudiv_b a{ /*IE only hack*/
+	width: 100%;
+}
+
+.dropmenudiv_b a:hover{ /*THEME CHANGE HERE*/
+	background-color: #A1A1A1;
+}
+
+/* ######### Responsive CSS ######### */
+
+
+@media screen and (max-width: 480px){
+
+	.bluetabs{
+		border-bottom-width: 0;
+	}
+
+	.bluetabs li{
+		margin: 0;
+	}
+
+	.bluetabs li a{
+		padding: 10px auto;
+		display: block;
+		width: 100%;
+		font-size: 120%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.dropmenudiv_b{
+		width: 100% !important;
+		display: none;
+		position: static;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	 .dropmenudiv_b a{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+}
+
