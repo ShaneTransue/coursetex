@@ -111,8 +111,9 @@ div.abstract {width:100%;}
 div.lstlisting{font-family: monospace; white-space: nowrap; margin-top:0.5em; margin-bottom:0.5em; }
 div.lstinputlisting{ font-family: monospace; white-space: nowrap; }
 .lstinputlisting .label{margin-right:0.5em;}
-body { background-color: #fff; margin: 0 0 0 0; } 
-body > p.noindent{ height 0px; margin: 0 0 0 0; }
+body { background-color: #fff; margin: 0 0 0 0; font-size: 17px; } 
+body > p.noindent { height 0px; margin: 0 0 0 0; } 
+body > p.indent { font-size: 17px; } 
 div.topbar { margin: 0 0 0 0; margin-bottom: 8px; background-color: #5e5e5e; height: 6px; } 
 img.math { vertical-align: top; margin-top: -6px; } 
 table.equation { padding-top: 10px; } 

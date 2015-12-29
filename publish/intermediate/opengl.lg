@@ -167,8 +167,9 @@ Css: table.multline, table.multline-star {width:100%;}
 Css: td.gather {text-align:center; }
 Css: table.gather {width:100%;}
 Css: div.gather-star {text-align:center;}
-Css: body { background-color: #fff; margin: 0 0 0 0; } 
-Css: body > p.noindent{ height 0px; margin: 0 0 0 0; }
+Css: body { background-color: #fff; margin: 0 0 0 0; font-size: 17px; } 
+Css: body > p.noindent { height 0px; margin: 0 0 0 0; } 
+Css: body > p.indent { font-size: 17px; } 
 Css: div.topbar { margin: 0 0 0 0; margin-bottom: 8px; background-color: #5e5e5e; height: 6px; } 
 Css: img.math { vertical-align: top; margin-top: -6px; } 
 Css: table.equation { padding-top: 10px; } 

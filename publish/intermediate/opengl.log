@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=latex 2015.12.20)  28 DEC 2015 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=latex 2015.12.20)  28 DEC 2015 20:20
 entering extended mode
 **\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx\HCode\def\HCod
 e##1{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g
@@ -792,4 +792,4 @@ Here is how much of TeX's memory you used:
  1025 hyphenation exceptions out of 8191
  44i,9n,74p,827b,1256s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on opengl.dvi (6 pages, 28880 bytes).
+Output written on opengl.dvi (6 pages, 28952 bytes).
