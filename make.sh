@@ -76,6 +76,10 @@ find $MODULE_DIR/ -type f -name '*.html' -execdir mv "{}" $ROOT/$PUBLISH_DIR/$HT
 #-------------------------------------------------------------------------------------
 find $MODULE_DIR/ -type f -name '*.css' -execdir mv "{}" $ROOT/$PUBLISH_DIR/$HTML_DIR/$CSS_DIR/ \;
 find $MODULE_DIR/ -type f -name '*.svg' -execdir mv "{}" $ROOT/$PUBLISH_DIR/$HTML_DIR/$IMAGE_DIR/ \;
+find $MODULE_DIR/ -type f -name '*.png' -execdir cp "{}" $ROOT/$PUBLISH_DIR/$HTML_DIR/$IMAGE_DIR/ \;
+find $MODULE_DIR/ -type f -name '*.bmp' -execdir cp "{}" $ROOT/$PUBLISH_DIR/$HTML_DIR/$IMAGE_DIR/ \;
+find $MODULE_DIR/ -type f -name '*.jpg' -execdir cp "{}" $ROOT/$PUBLISH_DIR/$HTML_DIR/$IMAGE_DIR/ \;
+find $MODULE_DIR/ -type f -name '*.jpeg' -execdir cp "{}" $ROOT/$PUBLISH_DIR/$HTML_DIR/$IMAGE_DIR/ \;
 
 #-------------------------------------------------------------------------------------
 # Copy Java-script plug-ins to the publish directory.
